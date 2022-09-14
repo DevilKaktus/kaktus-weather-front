@@ -1,0 +1,88 @@
+@import "../style/_variables";
+@import "../style/_mixins.scss";
+
+.current-weather-wrapper {
+  width: 35vw;
+  height: 50vh;
+  position: relative;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    height: 50vh;
+  }
+
+  &:hover > .element-current {
+    box-shadow: 0px 0px 20px 10px #586ed3;
+  }
+}
+
+.element-current {
+  top: 8px;
+  left: 8px;
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
+  box-shadow: 0px 0px 12px 8px #586ed3;
+}
+
+.current-weather-container {
+  background: $base-color;
+  display: block;
+  width: 35vw;
+  height: 50vh;
+  position: relative;
+
+  z-index: 3;
+  @include rounded-card();
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    height: 50vh;
+  }
+}
+
+.weather-block {
+  width: 35vw;
+  height: calc(50vh - 100px);
+  padding: 20px 0;
+  display: flex;
+  // flex-direction: column;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    height: calc(50vh - 80px);
+    width: auto;
+  }
+
+  &__temp {
+    font-size: 80px;
+    @include square();
+    @include flex-column-centered();
+    @media screen and (max-width: 768px) {
+      font-size: 30px;
+    }
+  }
+  &__feels-like {
+    font-size: 15px;
+    @include flex-column-centered();
+  }
+  &__humidity {
+    @include flex-column-centered();
+    @include square();
+  }
+  &__weather {
+    font-size: 30px;
+    font-style: italic;
+    @include flex-column-centered();
+    @include square();
+  }
+  &__wind {
+    @include flex-column-centered();
+    @include square();
+  }
+}
+
+.rain {
+  height: 20px;
+}

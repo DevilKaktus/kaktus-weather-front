@@ -1,0 +1,36 @@
+@import "./style/_variables";
+@import "./style/mixins";
+
+.App {
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  background: $base-color-dark;
+  height: calc(100vh - 20px);
+  width: calc(100vw - 20px);
+  color: white;
+  padding: 10px;
+  z-index: auto;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.element {
+  @include element();
+  transition: $hover-glow-transition;
+}
+
+.big-number {
+  font-size: 50px;
+  @media screen and (max-width: 768px) {
+    font-size: 30px;
+  }
+}
+.medium-number {
+  font-size: 30px;
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
+}

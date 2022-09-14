@@ -1,0 +1,22 @@
+@import "./variables";
+
+@mixin square {
+  width: calc((100% / 2) - 10px);
+  height: calc((100% / 2) - 10px);
+}
+
+@mixin flex-column-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin rounded-card {
+  border-radius: 30px;
+}
+
+@mixin element {
+  z-index: 1;
+  position: absolute;
+  border-radius: 30px;
+}
