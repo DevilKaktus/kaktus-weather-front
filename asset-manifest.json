@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/kaktus-weather-front/static/css/main.46b7be28.css",
+    "main.js": "/kaktus-weather-front/static/js/main.36661331.js",
+    "index.html": "/kaktus-weather-front/index.html",
+    "main.46b7be28.css.map": "/kaktus-weather-front/static/css/main.46b7be28.css.map",
+    "main.36661331.js.map": "/kaktus-weather-front/static/js/main.36661331.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.46b7be28.css",
+    "static/js/main.36661331.js"
+  ]
+}
