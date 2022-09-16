@@ -30,7 +30,7 @@ export default function DaylyWeatherCard({
             {weather[0].toUpperCase() + weather.slice(1)}
           </div>
           <div className={"daylyweathercard daylyweathercard-wind"}>
-            {wind}м/с
+            Ветер: {wind}м/с
           </div>
         </div>
       </div>

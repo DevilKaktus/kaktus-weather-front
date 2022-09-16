@@ -29,6 +29,7 @@ function App() {
   } else {
     return (
       <div className="App">
+        <div className="App__wrapper">
         <CurrentWeather
           temp={data.list[0].main.temp}
           feelsLike={data.list[0].main.feels_like}
@@ -38,6 +39,7 @@ function App() {
           list={data.list}
         />
         <DaylyWeather list={data.list} />
+        </div>
       </div>
     );
   }

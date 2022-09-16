@@ -2,12 +2,17 @@
 @import "./style/mixins";
 
 .App {
+  background: $base-color-dark;
+  min-height: 100vh;
+}
+
+.App__wrapper {
   display: flex;
   justify-content: flex-start;
   text-align: center;
-  background: $base-color-dark;
-  height: calc(100vh - 20px);
-  width: calc(100vw - 20px);
+  
+  // height: calc(100vh - 20px);
+  // width: calc(100vw - 20px);
   color: white;
   padding: 10px;
   z-index: auto;
@@ -15,6 +20,8 @@
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
+
+
 }
 
 .element {
