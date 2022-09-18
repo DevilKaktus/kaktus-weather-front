@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/kaktus-weather-front/static/css/main.e9036ccb.css",
-    "main.js": "/kaktus-weather-front/static/js/main.01a389db.js",
+    "main.css": "/kaktus-weather-front/static/css/main.64ea395d.css",
+    "main.js": "/kaktus-weather-front/static/js/main.148815fc.js",
     "index.html": "/kaktus-weather-front/index.html",
-    "main.e9036ccb.css.map": "/kaktus-weather-front/static/css/main.e9036ccb.css.map",
-    "main.01a389db.js.map": "/kaktus-weather-front/static/js/main.01a389db.js.map"
+    "main.64ea395d.css.map": "/kaktus-weather-front/static/css/main.64ea395d.css.map",
+    "main.148815fc.js.map": "/kaktus-weather-front/static/js/main.148815fc.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9036ccb.css",
-    "static/js/main.01a389db.js"
+    "static/css/main.64ea395d.css",
+    "static/js/main.148815fc.js"
   ]
 }
