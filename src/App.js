@@ -9,7 +9,7 @@ function App() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("https://kaktus-weather-backend.herokuapp.com/")
+    fetch("https://kaktus-weather-backend.herokuapp.com/kzn")
       .then((response) => response.json())
       .then(
         (result) => {
