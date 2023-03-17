@@ -9,7 +9,7 @@ function App() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("https://kaktus-weather-backend.herokuapp.com/")
+    fetch("http://45.146.166.156:5000/")
       .then((response) => response.json())
       .then(
         (result) => {
